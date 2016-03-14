@@ -2,7 +2,7 @@
 
 "use strict";
 
-var ltusb = require("..");
+var ltusb = require('..');
 ltusb(function (err, usbs) {
   console.log(usbs);
 });

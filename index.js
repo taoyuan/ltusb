@@ -9,7 +9,7 @@ module.exports = function (cb) {
   var timer = setTimeout(function () {
     cb(new Error("Timeout error"));
   }, 50000);
-  child_process.exec(path.join(__dirname, "lsusb.sh"), function (error, stdout, stderr) {
+  child_process.exec(path.join(__dirname, "ltusb.sh"), function (error, stdout, stderr) {
     clearTimeout(timer);
     if (error || stderr) {
       cb(error || stderr);

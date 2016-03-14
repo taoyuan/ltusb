@@ -36,6 +36,9 @@
     "gulp-plumber": "^1.1.0",
     "mocha": "^2.4.5"
   },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
   "eslintConfig": {
     "extends": "xo-space",
     "env": {
