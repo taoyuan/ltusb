@@ -5,7 +5,7 @@ var child_process = require("child_process");
 var proback = require("proback");
 
 module.exports = function (cb) {
-  cb = cb || proback.creatPromiseCallback();
+  cb = cb || proback();
   var timer = setTimeout(function () {
     cb(new Error("Timeout error"));
   }, 50000);
