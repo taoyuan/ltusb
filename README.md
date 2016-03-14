@@ -18,7 +18,7 @@ ltusb(function(err, usbs) {
 
 // or 
 
-ltusb().then(function(err, usbs) {
+ltusb().then(function(usbs) {
   console.log(usbs);
 });
 ```
