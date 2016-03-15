@@ -20,7 +20,7 @@ for sysdevpath in $(find /sys/bus/usb/devices/usb*/ -name dev); do
     fi
     if [[ $kind != "0" ]]; then
       hub=$(echo $syspath | sed 's/\/sys\/bus\/usb\/devices\/usb//g' | sed 's/\// /g'| awk '{print($3)}')
-      usb="{\"dev\":\"/dev/$devname\",\"type\":\"$kind\",\"hub\":\"$hub\",\"product\":\"$vendor:$model\",\"serial\":\"$ID_SERIAL\"}"
+      usb="{\"dev\":\"/dev/$devname\",\"type\":\"$kind\",\"hub\":\"$hub\",\"product\":\"$vendor:$model\",\"id\":\"$ID_SERIAL\"}"
       if [[ $usbs ]]; then
         usbs="$usbs,$usb"
       else
