@@ -1,6 +1,6 @@
 {
   "name": "ltusb",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A typed usb device list utility",
   "homepage": "",
   "author": {
